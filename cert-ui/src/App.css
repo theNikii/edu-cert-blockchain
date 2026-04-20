@@ -15,22 +15,14 @@
 h1 {
   font-size: 3em;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
-p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
-  opacity: 0.9;
-}
-
-/* Tabs */
 .tabs {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin: 30px 0;
-  flex-wrap: wrap;
 }
 
 .tab, .tab-active {
@@ -39,51 +31,34 @@ p {
   border-radius: 25px;
   color: white;
   cursor: pointer;
-  font-size: 16px;
-  transition: all 0.3s;
 }
 
 .tab {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.tab:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255,255,255,0.1);
 }
 
 .tab-active {
-  background: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  background: rgba(255,255,255,0.3);
+  box-shadow: 0 4px 15px rgba(255,255,255,0.2);
   transform: translateY(-2px);
 }
 
-/* Inputs & buttons */
 .input-group {
   display: flex;
   gap: 15px;
   justify-content: center;
   margin-bottom: 40px;
   flex-wrap: wrap;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .cert-input, .file-input {
   flex: 1;
   min-width: 400px;
   padding: 15px;
-  font-size: 16px;
   border: none;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255,255,255,0.95);
   color: #333;
-}
-
-.cert-input:focus, .file-input:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
 }
 
 .verify-btn, .issue-btn {
@@ -93,8 +68,6 @@ p {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: all 0.3s;
-  box-shadow: 0 4px 15px rgba(0, 212, 170, 0.4);
 }
 
 .verify-btn {
@@ -102,74 +75,34 @@ p {
   color: white;
 }
 
-.verify-btn:hover:not(:disabled) {
-  background: #00b894;
-  transform: translateY(-2px);
-}
-
 .issue-btn {
   background: #ff6b6b;
   color: white;
 }
 
-.issue-btn:hover:not(:disabled) {
-  background: #e55c5c;
-  transform: translateY(-2px);
-}
-
-/* Result panel */
 .result {
   max-width: 700px;
   margin: 30px auto;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .result.success {
-  background: rgba(0, 212, 170, 0.2);
+  background: rgba(0,212,170,0.2);
   border: 2px solid #00d4aa;
 }
 
-.result.issued {
-  background: rgba(100, 149, 237, 0.2);
-  border: 2px solid #6495ed;
-}
-
 .result.error {
-  background: rgba(255, 85, 85, 0.2);
+  background: rgba(255,85,85,0.2);
   border: 2px solid #ff5555;
-}
-
-.cert-details {
-  text-align: left;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px 0;
-}
-
-.cert-details p {
-  margin: 10px 0;
-  font-size: 1.1em;
 }
 
 .qr-section {
   margin-top: 30px;
 }
 
-.qr-section p {
-  margin-bottom: 15px;
-  font-size: 1.1em;
-}
-
-/* Additional classes */
-.tab-content {
-  margin-top: 20px;
-}
-
 .error-message {
-  color: #ff5555;
-  font-weight: bold;
   margin-top: 15px;
+  font-weight: bold;
 }
